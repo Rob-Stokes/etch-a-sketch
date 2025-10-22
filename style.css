@@ -7,6 +7,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -27,4 +29,8 @@ h1 {
   flex-basis: 6.25%;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
+}
+
+.filled {
+    background-color: black;
 }
