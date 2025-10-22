@@ -1,6 +1,6 @@
 const gridContainer = document.querySelector(".grid-container");
 
-for (let i = 0; i < 256; i++) {
+for (let i = 0; i < totalSquares; i++) {
     const div = document.createElement("div");
     gridContainer.appendChild(div);
 }
@@ -12,9 +12,13 @@ for (let i = 0; i < 256; i++) {
       })
     });
 
+
+let gridSize = 0
+let totalSquares = 0
 const btnNew = document.querySelector("#new");
 btnNew.addEventListener('click', () => {
-  prompt("Choose a grid size (2-100)");
+  gridSize = parseInt(prompt("Choose a grid size (2-100)"));
+  totalSquares = gridSize * gridSize;
 });
 
 const btnClear = document.querySelector("#clear");
