@@ -4,6 +4,8 @@ function createGrid() {
 for (let i = 0; i < totalSquares; i++) {
     const div = document.createElement("div");
     gridContainer.appendChild(div);
+    let squareSize = 100/gridSize;
+    div.style.flexBasis = squareSize + '%';
 }
 }
 
