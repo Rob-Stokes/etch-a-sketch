@@ -50,6 +50,7 @@ button {
 
 .grid-container div {
   flex-basis: 6.25%;
+  height: 6.25%;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
 }
