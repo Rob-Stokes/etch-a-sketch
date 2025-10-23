@@ -24,6 +24,10 @@ addHoverListeners();
 const btnNew = document.querySelector("#new");
 btnNew.addEventListener('click', () => {
   gridSize = parseInt(prompt("Choose a grid size (2-100)"));
+      while (gridSize > 100 || gridSize < 2) {
+      alert('Number must be between 2-100');
+      gridSize = parseInt(prompt("Choose a grid size (2-100)"));
+    }
   totalSquares = gridSize * gridSize;
   clearGrid();
   createGrid();
